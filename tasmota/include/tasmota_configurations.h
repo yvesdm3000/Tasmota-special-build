@@ -1065,8 +1065,8 @@
         #define PW_FTP "pass"
       #endif
     #endif // ESP8266_4M
-    #define USE_SPI
-    #define USE_SDCARD
+//    #define USE_SPI
+//    #define USE_SDCARD
     #define USE_PING
   #endif // FIRMWARE_MINIMAL
 

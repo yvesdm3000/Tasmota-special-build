@@ -486,8 +486,8 @@
 //  #define USE_WEBRUN                             // Enable executing a tasmota command file from external web server (+0.4 code)
 //  #define USE_GPIO_VIEWER                        // Enable GPIO Viewer to see realtime GPIO states (+6k code)
 //    #define GV_SAMPLING_INTERVAL  100            // [GvSampling] milliseconds - Use Tasmota Scheduler (100) or Ticker (20..99,101..1000)
-  #define USE_EMULATION_HUE                      // Enable Hue Bridge emulation for Alexa (+14k code, +2k mem common)
-  #define USE_EMULATION_WEMO                     // Enable Belkin WeMo emulation for Alexa (+6k code, +2k mem common)
+//  #define USE_EMULATION_HUE                      // Enable Hue Bridge emulation for Alexa (+14k code, +2k mem common)
+//  #define USE_EMULATION_WEMO                     // Enable Belkin WeMo emulation for Alexa (+6k code, +2k mem common)
   // #define USE_CCLOADER                           // Enable CCLoader FW upgrade tool (for CC25xx devices)
 
 // -- mDNS ----------------------------------------
@@ -512,7 +512,7 @@
 #define USE_RULES                                // Add support for rules (+13k code, +768 bytes mem)
   #define SUPPORT_MQTT_EVENT                     // Support trigger event with MQTT subscriptions (+1k8 code)
   #define USE_EXPRESSION                         // Add support for expression evaluation in rules (+1k7 code)
-    #define SUPPORT_IF_STATEMENT                 // Add support for IF statement in rules (+2k7)
+//    #define SUPPORT_IF_STATEMENT                 // Add support for IF statement in rules (+2k7)
 //  #define USER_RULE1 "<Any rule1 data>"          // Add rule1 data saved at initial firmware load or when command reset is executed
 //  #define USER_RULE2 "<Any rule2 data>"          // Add rule2 data saved at initial firmware load or when command reset is executed
 //  #define USER_RULE3 "<Any rule3 data>"          // Add rule3 data saved at initial firmware load or when command reset is executed
@@ -1167,7 +1167,7 @@
   //#define USE_IBEACON_ESP32                      // Add support for Bluetooth LE passive scan of iBeacon devices using the internal ESP32 Bluetooth module
 //#define USE_WEBCAM                               // Add support for webcam
 
-#define USE_AUTOCONF                             // Enable Esp32 autoconf feature, requires USE_BERRY and USE_WEBCLIENT_HTTPS (12KB Flash)
+//#define USE_AUTOCONF                             // Enable Esp32 autoconf feature, requires USE_BERRY and USE_WEBCLIENT_HTTPS (12KB Flash)
 #define USE_BERRY                                // Enable Berry scripting language
   #define USE_BERRY_PYTHON_COMPAT                // Enable by default `import python_compat`
   #define USE_BERRY_TIMEOUT             4000     // Timeout in ms, will raise an exception if running time exceeds this timeout
@@ -1178,7 +1178,7 @@
   //   #define UBE_BERRY_DEBUG_GC                   // Print low-level GC metrics
   // #define USE_BERRY_INT64                        // Add 64 bits integer support (+1.7KB Flash)
   #define USE_WEBCLIENT                          // Enable `webclient` to make HTTP/HTTPS requests. Can be disabled for security reasons.
-    // #define USE_WEBCLIENT_HTTPS                  // Enable HTTPS outgoing requests based on BearSSL (much ligher then mbedTLS, 42KB vs 150KB) in insecure mode (no verification of server's certificate)
+  #define USE_WEBCLIENT_HTTPS                  // Enable HTTPS outgoing requests based on BearSSL (much ligher then mbedTLS, 42KB vs 150KB) in insecure mode (no verification of server's certificate)
                                                  // Note that only one cipher is enabled: ECDHE_RSA_WITH_AES_128_GCM_SHA256 which is very commonly used and highly secure
     #define USE_BERRY_WEBCLIENT_USERAGENT  "TasmotaClient" // default user-agent used, can be changed with `wc.set_useragent()`
     #define USE_BERRY_WEBCLIENT_TIMEOUT  2000    // Default timeout in milliseconds
